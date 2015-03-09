@@ -1,0 +1,27 @@
+html{background:linear-gradient(#000,#00008b,#00f,#00008b,#000);}
+html body{height:100%;margin:0;overflow:hidden;top:0;}
+html body >div:nth-of-type(n+2){float:left;height:20%;position:relative;top:-20%;width:20%;}
+html body >div:nth-of-type(n+2) img{float:left;height:100%;visibility:hidden;}
+html body >div:nth-of-type(n+2) img:nth-of-type(1){margin:9.6em 0 0;visibility:visible}
+html body,html .H{width:100%;position:absolute}
+.H{height:100%;}
+.H #H1{background:linear-gradient(90deg,#000,#7c7c05,#ff0,#7c7c05,#000);background-repeat:no-repeat;background-size:contain;}
+.H #H1:before{font-size:8em;content:'1'}
+.H #H2{background:linear-gradient(90deg,#000,#00008b,#00f,#00008b,#000);}
+.H #H2:before{font-size:8em;content:'2'}
+.H #H3{background:linear-gradient(90deg,#000,#8b0000,#f00,#8b0000,#000);}
+.H #H3:before{font-size:8em;content:'3'}
+.H #H4{background:linear-gradient(90deg,#000,#006400,#008000,#006400,#000);}
+.H #H4:before{font-size:8em;content:'4'}
+.H #H5{background:linear-gradient(90deg,#000,#fff,#000);}
+.H #H5:before{font-size:8em;content:'5'}
+.H div{color:#fff;float:left;height:100%;text-align:center;text-shadow:#000 4px 3px 8px;width:20%;}
+.H div img{height:19.45%;opacity:.7}
+img{width:100%;}
+img:hover{cursor:-webkit-grab}
+img:active{cursor:-webkit-grabbing}
+::selection{background:transparent}
+.c{cursor:alias;-webkit-animation:P .8s infinite}
+@-webkit-keyframes P{50%{opacity:.7}
+100%{opacity:1}
+}

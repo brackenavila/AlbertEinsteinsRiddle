@@ -1,0 +1,79 @@
+html
+	background linear-gradient(black,darkblue,blue,darkblue,black)
+	body
+		height 100%
+		margin 0
+		overflow hidden
+		top 0
+		>div
+			&:nth-of-type(n+2)
+				float left
+				height 20%
+				position relative
+				top -20%
+				width 20%
+				img
+					float left
+					height 100%
+					visibility hidden
+					&:nth-of-type(1)
+						margin 9.6em 0 0
+						visibility visible
+	body, .H
+		width 100%
+		position absolute
+.H
+	#H1
+		background linear-gradient(90deg,black,#7C7C05,yellow,#7C7C05,black)
+		background-repeat no-repeat
+		background-size contain
+		&:before
+			font-size 8em
+			content '1'
+	#H2
+		background linear-gradient(90deg,black,darkblue,blue,darkblue,black)
+		&:before
+			font-size 8em
+			content '2'
+	#H3
+		background linear-gradient(90deg,black,darkred,red,darkred,black)
+		&:before
+			font-size 8em
+			content '3'
+	#H4
+		background linear-gradient(90deg,black,darkgreen,green,darkgreen,black)
+		&:before
+			font-size 8em
+			content '4'
+	#H5
+		background linear-gradient(90deg,black,white,black)
+		&:before
+			font-size 8em
+			content '5'
+	height 100%
+	div
+		color white
+		float left
+		height 100%
+		text-align center
+		text-shadow #000 4px 3px 8px
+		width 20%
+		img
+			height 19.45%
+			opacity .7
+img
+	width 100%
+	&:hover
+		cursor -webkit-grab
+	&:active
+		cursor -webkit-grabbing
+::selection
+	background transparent
+.c
+	cursor alias
+	-webkit-animation P .8s infinite
+@-webkit-keyframes P
+	50%
+		opacity .7
+	100%
+		opacity 1
